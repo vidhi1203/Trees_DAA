@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel='icon' href='icon.svg'>
+        <title>Backtracking</title>
+        <style>
+            body
+            {
+                background-color: black;
+            }
+            div a
+            {
+                color:rgb(20, 245, 245);
+                border:1px solid rgb(20, 245, 245);
+                border-radius:5px;
+                width:20%;
+                font-size:25px;
+                text-align:center;
+                padding:10px;
+                margin:25px;
+                letter-spacing: 2px;
+                text-decoration: none;
+            }
+
+            div a:hover
+            {
+                color:black;
+                background-color:rgb(20, 245, 245) ;
+                box-shadow: 0 0 5px rgb(20, 245, 245),
+                            0 0 25px rgb(20, 245, 245);
+            }
+
+            nav 
+            {
+                margin-top:20px;
+                text-align: right;
+            }
+            .menu
+            {
+                text-decoration: none;
+                color: chartreuse;
+                font-size:25px;
+                margin-left:25px;
+                
+                padding:5px;
+            }
+
+            .menu:hover
+            {
+                color:black;
+                background-color:chartreuse ;
+                box-shadow: 0 0 5px chartreuse,
+                            0 0 25px chartreuse;
+                border-radius: 5px;
+            }
+            .text1
+            {
+                margin-top:10px;
+                float:left;
+                font-size:30px;
+                border:1px solid chartreuse;
+                border-radius: 50%;
+                color:white;
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div class='text1'>DAA</div>
+            <a href="home0.html" class='menu'>Home</a>
+            <a href='home.html' class='menu'>Minimum Spanning Tree</a>
+            <a href='back.html' class='menu'>Backtracking</a>
+        </nav>
+        <hr>
+        <div class='heading' style='font-size:50px;text-align: center;color:rgb(225, 240, 26); margin:50px;'>
+            Backtracking Application
+            <br>
+            Rat in a Maze
+        </div>
+        <div class='text' style='width:45%; color:rgba(3, 240, 169, 0.918);font-size:30px; margin-left:37%'>
+            <ul>
+                <li>Source=(0,0)</li><br>
+                <li>Destination=(n,n)</li><br>
+                <li>Check Right or Check Down</li>
+                    <ul><br>
+                        <li>If True: Go</li>
+                        <li>Else: Backtrack</li>
+                    </ul><br>
+                    <li>Check Top or Check Left</li>
+                    <ul><br>
+                        <li>If True: Go</li>
+                        <li>Else: Backtrack</li>
+                    </ul>
+            </ul>
+        </div>
+        <
+        <div >
+            <video controls>
+                <source src="backrat.mp4" type="video/mp4">
+                Video is not supported by your browser
+             </video>
+        </div>
+        <div>
+            <a href='back.html' style="float: left;"><--Backtracking</a>
+            <a href='home0.html' style='float:right;'>Home--></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Prims Algorithm</title>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='icon' href='icon.svg'>
+    </head>
+
+    <body>
+        <nav>
+            <div class='navtext'>DAA</div>
+            <a href="home0.html" class='menu'>Home</a>
+            <a href='home.html' class='menu'>Minimum Spanning Tree</a>
+            <a href='back.html' class='menu'>Backtracking</a>
+        </nav>
+        <hr>
+        <div class=theory>
+            <img src='bulb.png'>
+            <div class=text1>
+                Prims Algorithm
+                <div class=content>
+                    It is a <span style='color:blue'>greedy algorithm.</span> <br><br>It starts with an empty spanning tree. The idea is to maintain two sets of vertices:
+                    <ul >
+                    <li>Contain vertices already included in MST.</li>
+                    <li>Contain vertices not yet included.</li>
+                    </ul>
+                    At every step, it considers all the edges and picks the minimum weight edge. After picking the edge, it moves the other endpoint of edge to set containing MST.
+
+                </div>
+            </div>
+        </div>
+
+        <div class=algo>
+            <div class=text2>
+                Algorithm
+                <div class=content style='text-align: left; padding-left:175px'>
+                    <ol>
+                        <li>for each u ∈ V [G]</li>
+                        <li>do key [u] ← ∞</li>
+                        <li>π [u] ← NIL</li>
+                        <li>key [r] ← 0</li>
+                        <li>Q ← V [G] - r</li>
+                        <li>While Q ? ∅</li>
+                        <li>do u ← EXTRACT - MIN (Q)</li>
+                        <li>for each v ∈ Adj [u]</li>
+                        <li>do if v ∈ Q and w (u, v) < key [v]</li>
+                        <li>then π [v] ← u</li>
+                        <li>key [v] ← w (u, v)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <img src='algo.png'>
+        </div>
+        <div >
+            <video controls>
+                <source src="primsexample.mp4" type="video/mp4">
+                Video is not supported by your browser
+             </video>
+
+            <div>
+
+        <div class=time>
+            <img src='time.png'>
+            <div class=text1>
+                Time Complexity
+                <div class='content' style="padding-top:170px">
+                    The time complexity for Prims Algorithm is <span style='color:blue'>O(ElogV)</span><div class=""><br>
+                    This can be improved by using Fibonacci Heaps which reduces the complexity to O(E+logV)
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div>
+            <a href='home.html' style='float: left;'><--Home</a>
+            <a href='dijkstra.html' style='float:right;'>Dijkstra --></a>
+        </div>
+
+    </body>
+</html>

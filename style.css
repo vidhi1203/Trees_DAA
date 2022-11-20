@@ -1,0 +1,120 @@
+body
+{
+    background-color: black;
+}
+.theory
+{
+    margin-top:50px;
+    margin-left:20px;
+    width: 95%;
+    height:100%;
+    background-color: cadetblue;
+    margin-bottom:30px;
+}
+img
+{
+    padding:30px;
+    height: 70%;
+    width:30%;
+    padding-top:90px;
+    transform: rotate(-20deg);
+}
+.text1
+{
+    float:right;
+    color:Red;
+    font-size:50px;
+    text-align:center;
+    width:50%;
+    padding:20px;
+}
+.algo
+{
+    background-color: rgb(220, 223, 89);
+    margin-left:20px;
+    width: 95%;
+    height:100%;
+    margin-bottom:30px;
+}
+
+.text2
+{
+    float:left;
+    color:Red;
+    font-size:50px;
+    text-align:center;
+    width:60%;
+    padding:20px;
+}
+
+.time
+{
+    background-color: rgba(193, 101, 230, 0.973);
+    margin-left:20px;
+    width: 95%;
+    height:100%;
+    margin-bottom:30px;
+}
+
+div a
+{
+    color:rgb(20, 245, 245);
+    border:1px solid rgb(20, 245, 245);
+    border-radius:5px;
+    font-size:25px;
+    text-align:center;
+    padding:10px;
+    max-width:300px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin:10px;
+}
+
+div a:hover
+{
+    color:black;
+    background-color:rgb(20, 245, 245) ;
+    box-shadow: 0 0 5px rgb(20, 245, 245),
+                0 0 25px rgb(20, 245, 245);
+}
+
+.content
+{
+    font-size:30px;
+    padding-top:50px;
+    color:black
+}
+
+nav 
+            {
+                margin-top:20px;
+                text-align: right;
+            }
+            .menu
+            {
+                text-decoration: none;
+                color: chartreuse;
+                font-size:25px;
+                margin-left:25px;
+                
+                padding:5px;
+            }
+
+            .menu:hover
+            {
+                color:black;
+                background-color:chartreuse ;
+                box-shadow: 0 0 5px chartreuse,
+                            0 0 25px chartreuse;
+                border-radius: 5px;
+            }
+            .navtext
+            {
+                margin-top:10px;
+                float:left;
+                font-size:30px;
+                border:1px solid chartreuse;
+                border-radius: 50%;
+                color:white;
+                padding:10px;
+            }

@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <title>Kruskal's Application</title>
+    <link rel='icon' href='icon.svg'>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+      img
+      {
+        height:350px;
+        width:250px;
+        border:2px solid black;;
+      }
+      .container {
+    max-width: 100%;
+    margin:50px;
+    justify-content: space-around;
+}
+
+.card {
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:100px;
+    margin-bottom: 100px;
+    width: 40%;
+    height: 500px;
+    background:linear-gradient(rgb(60, 255, 0),rgb(209, 212, 6));
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    margin-left: 45%;
+    z-index: 1111;
+    transform: perspective(2000px) rotate(0deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+
+ 
+.card .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    background:linear-gradient(rgb(209, 212, 6),rgb(60, 255, 0));
+    color: maroon;
+    font-size:30px;
+    padding:10px;
+    padding-top:200px;
+    text-align: center;
+}
+
+
+
+.card:hover .img-container {
+    transform: rotateY(-135deg);
+}
+
+.card .card-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+    text-align:center;
+    padding-top:10%;
+}
+
+
+.card .card-details p {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.heading
+{
+    text-decoration: underline;
+    font-size:25px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color:maroon;
+}
+nav 
+            {
+                margin-top:20px;
+                text-align: right;
+            }
+            .menu
+            {
+                text-decoration: none;
+                color: chartreuse;
+                font-size:25px;
+                margin-left:25px;
+                
+                padding:5px;
+            }
+
+            .menu:hover
+            {
+                color:black;
+                background-color:chartreuse ;
+                box-shadow: 0 0 5px chartreuse,
+                            0 0 25px chartreuse;
+                border-radius: 5px;
+            }
+            .text1
+            {
+                margin-top:10px;
+                float:left;
+                font-size:30px;
+                border:1px solid chartreuse;
+                border-radius: 50%;
+                color:white;
+                padding:10px;
+            }
+            div a:hover
+            {
+                color:black;
+                background-color:rgb(20, 245, 245) ;
+                box-shadow: 0 0 5px rgb(20, 245, 245),
+                            0 0 25px rgb(20, 245, 245);
+            }
+
+            div a
+            {
+                color:rgb(20, 245, 245);
+                border:1px solid rgb(20, 245, 245);
+                border-radius:5px;
+                font-size:25px;
+                text-align:center;
+                padding:10px;
+                max-width:300px;
+                letter-spacing: 2px;
+                text-decoration: none;
+                margin:10px;
+            }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+        <div class='text1'>DAA</div>
+        <a href="home0.html" class='menu'>Home</a>
+        <a href='home.html' class='menu'>Minimum Spanning Tree</a>
+        <a href='back.html' class='menu'>Backtracking</a>
+    </nav>
+    <hr>
+    <center><h1 style=' margin-top:100px; color:white;'>Let's generate a <span style='color:red;'>MAZE</span> using Kruskal's Algorithm</h1></center>
+    <div align='center' style="color: aqua;"> 
+
+      <div class="card">
+        <div class="img-container">
+            Original Graph
+        </div>
+        <div class="card-details">
+            <img src='graph.png'>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="img-container">
+          Generated Maze
+      </div>
+      <div class="card-details">
+          <img src='maze0.png'>
+      </div>
+  </div>
+
+  <div class="card">
+    <div class="img-container">
+        Maze Solution 1
+    </div>
+    <div class="card-details">
+        <img src='maze1.png'>
+    </div>
+</div>
+
+<div class="card">
+  <div class="img-container">
+      Maze Solution 2
+  </div>
+  <div class="card-details">
+      <img src='maze2.png'>
+  </div>
+</div>
+
+<div>
+    <a href='kruskal.html' style='float: left;'><--Kruskal</a>
+    <a href='code.html' style='float:right;'>Code --></a>
+</div>
+      
+  </body>
+</html>

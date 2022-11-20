@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Dijkstra's Algorithm</title>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='icon' href='icon.svg'>
+    </head>
+
+    <body>
+        <nav>
+            <div class='navtext'>DAA</div>
+            <a href="home0.html" class='menu'>Home</a>
+            <a href='home.html' class='menu'>Minimum Spanning Tree</a>
+            <a href='back.html' class='menu'>Backtracking</a>
+        </nav>
+        <hr>
+        <div class=theory>
+            <img src='bulb.png'>
+            <div class=text1>
+                Dijkstra's Algorithm
+                <div class=content style='padding-top:100px'>
+                    Dijkstra's Algorithm allows you to calculate the shortest path between one node (you pick which one) 
+                    and <span style='color:blue'>every other node in the graph. </span><br><br>
+                    It is a <span style='color:blue'>greedy Algorithm.</span><br><br>
+                    Unlike in Prims, we do not consider the node-to-node distance but a cumulative distance keeping in mind the source node.
+                </div>
+            </div>
+        </div>
+
+        <div class=algo>
+            <div class=text2>
+                Algorithm
+                <div class='content' style='text-align: left; padding-left:175px'>
+                    Dijkstra's Algorithm (G, w, s)
+                    <ol>
+                        <li>INITIALIZE - SINGLE - SOURCE (G, s)</li>
+                        <li>S←∅</li>
+                        <li>Q←V [G]</li>
+                        <li> while Q ≠ ∅</li>
+                        <li>do u ← EXTRACT - MIN (Q)</li>
+                        <li>S ← S ∪ {u}</li>
+                        <li>for each vertex v ∈ Adj [u]</li>
+                        <li>do RELAX (u, v, w)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <img src='algo.png'>
+        </div>
+        <div >
+            <video controls>
+                <source src="dijkstraexample.mp4" type="video/mp4">
+                Video is not supported by your browser
+             </video>
+
+            <div>
+        <div>
+        <div class=time>
+            <img src='time.png'>
+            <div class=text1>
+                Time Complexity
+                <div class='content'>
+                    The time complexity for Dijkstra's Algorithm is <span style='color:blue'>O(ElogV)</span><br><br><br>
+                        This can be improved by using Fibonacci Heaps which reduces the complexity to O(E+VlogV)
+                </div>
+            </div>
+
+            
+        </div>
+       
+        <a href='prims.html' style='float: left;'><--Prims</a>
+        <a href='kruskals.html' style='float:right;'>Kruskals --></a>
+    </div>
+    </body>
+</html>

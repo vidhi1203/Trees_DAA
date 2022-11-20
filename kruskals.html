@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Kruskals Algorithm</title>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='icon' href='icon.svg'>
+    </head>
+
+    <body>
+        <nav>
+            <div class='navtext'>DAA</div>
+            <a href="home0.html" class='menu'>Home</a>
+            <a href='home.html' class='menu'>Minimum Spanning Tree</a>
+            <a href='back.html' class='menu'>Backtracking</a>
+        </nav>
+        <hr>
+        <div class=theory>
+            <img src='bulb.png'>
+            <div class=text1>
+                Kruskals Algorithm
+                <div class='content'>
+                    Kruskal's algorithm to find the minimum cost spanning tree 
+                    uses the greedy approach. <br><br>This algorithm treats the graph as a forest 
+                    and every node it has as an individual tree. <br><br>A tree connects to another 
+                    only and only if, it has the least cost among all available options 
+                    and does not violate MST properties.
+                </div>
+            </div>
+        </div>
+
+        <div class=algo>
+            <div class=text2>
+                Algorithm
+                <div class='content' style='text-align: left; padding-left:175px'>
+                    <ol>
+                        <li>A ← ∅</li>
+                        <li>for each vertex v ∈ V [G]</li>
+                        <li>do MAKE - SET (v)</li>
+                        <li>sort the edges of E into non decreasing order by weight w</li>
+                        <li>for each edge (u, v) ∈ E, taken in non decreasing order by weight</li>
+                        <li>do if FIND-SET (μ) ≠ if FIND-SET (v)</li>
+                        <li>then A  ←  A ∪ {(u, v)}</li>
+                        <li>UNION (u, v)</li>
+                        <li>return A</li>
+                    </ol>
+                </div>
+            </div>
+
+            <img src='algo.png'>
+        </div>
+        <div >
+            <video controls>
+                <source src="kruskalexample.mp4" type="video/mp4">
+                Video is not supported by your browser
+             </video>
+            </div>
+        <div class=time>
+            <img src='time.png'>
+            <div class=text1>
+                Time Complexity
+                <div class='content' style='padding-top:200px'>
+                    The time complexity for Kruskal's Algorithm is <span style='color:blue'>O(ElogV)</span>
+                    </div>
+            </div>
+        </div>
+        
+        <div>
+        <a href='dijkstra.html' style='float: left;'><--Dijkstra</a>
+        <a href='application.html' style='float:right;'> Kruskal's Application--></a>
+    </div>
+    </body>
+</html>
